@@ -14,6 +14,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <meta name="viewport"content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
 </head>
 
@@ -32,7 +33,7 @@
         </ul>
       </nav>
       <address class="address">
-        <ul class="adress-list">
+        <ul class="address-list">
           <li>
             <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -41,6 +42,11 @@
           </li>
         </ul>
       </address>
+      <button type="button" class="open-menu-btn">
+        <svg width="24" height="24"> 
+          <use href="./images/icons.svg#icon-menu" ></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main>
@@ -413,7 +419,7 @@
       </div>
     </div>
   </footer>
-  <div class="backdrop is-open">
+  <div class="backdrop ">
     <div class="modal">
       <button type="button" class="modal-close-btn">
         <svg class="modal-close-icon" width="8" height="8">
