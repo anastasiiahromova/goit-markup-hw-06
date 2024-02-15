@@ -37,13 +37,43 @@ ol {
   padding: 0 16px;
   margin: 0 auto;
 }
+.header {
+  border-bottom: 1px solid #e7e9fc;
+box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+.header-container {
+display: flex;
+max-width: 320px;
+margin: 0 auto;
+padding: 0 15px;
+justify-content: space-between;}
+.logo {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 17px 0;
+}
+.logo-part {
+  color: #2e2f42;
+  margin: 0 auto;
+}
+.navigation{
+  background-color:#FFFFFF;
+display:flex;
+align-items: center;
+}
+
 @media screen and (min-width:768px)   {
   .container {
     max-width: 768px;
-    
   }
-  
 }
+
 @media screen and (min-width:1158px)   {
   .container {
     max-width: 1158px;
@@ -63,21 +93,7 @@ ol {
 
 
 
-.logo {
-  color: #4d5ae5;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 17px 0;
-}
-.logo-part {
-  color: #2e2f42;
-  margin: 0 auto;
-}
+
 
 .nav-list {
   display: none;
@@ -122,6 +138,10 @@ ol {
     letter-spacing: 0.02em;
     transition: color cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .address-link:hover, 
+.address-link:focus {
+color: #404bbf
+}
   .nav-link {
     color: #2e2f42;
     font-size: 16px;
@@ -168,7 +188,7 @@ ol {
 
   }
   
-  @media screen and(min-width:1158px) {
+  @media screen and (min-width:1158px) {
     .logo{
       margin-right:  76px; ;
 
