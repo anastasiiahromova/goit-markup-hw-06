@@ -65,6 +65,8 @@ ol {
   border: none;
 
 }
+.address-list{
+  display: none;}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -86,7 +88,7 @@ ol {
     display: none;
   }
   .address{
-display: block;
+display: flex;
   }
   .logo{
     margin-right: 120px;
@@ -135,7 +137,7 @@ display: block;
 .address {
   font-style: normal;
   margin-left: auto;
-  display: none;
+  display: flex;
 }
 .address-list{
   display: flex;
@@ -163,6 +165,7 @@ display: block;
     margin-right: 76px;
   }
   .address-list{
+    display: flex;
     flex-direction: row;
     gap:40px;
   }
@@ -173,11 +176,11 @@ display: block;
 
 }
 
+
 .navigation {
   display: flex;
   align-items: center;
 }
-
 .nav-list {
   display: none;
 }
@@ -238,7 +241,8 @@ display: block;
     line-height: 1.07;
     letter-spacing: 0.02em;
     margin: 0 auto;
-    margin-bottom: 72px;
+    margin-bottom: 36px;
+    padding: 0;
   }
 }
 
