@@ -33,20 +33,15 @@ ol {
 }
 
 .container {
-  max-width: 320px;
+  width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
-.header {
-  border-bottom: 1px solid #e7e9fc;
-box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-}
 .header-container {
-display: flex;
-max-width: 320px;
-margin: 0 auto;
-padding: 0 15px;
-justify-content: space-between;}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -62,148 +57,105 @@ justify-content: space-between;}
   color: #2e2f42;
   margin: 0 auto;
 }
-.navigation{
-  background-color:#FFFFFF;
-display:flex;
-align-items: center;
-}
-
-@media screen and (min-width:768px)   {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width:1158px)   {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-  .header-container {
-  display: flex;
-  align-items: center;
-  justify-content:space-between ;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-}
-
-
-
-
-
-.nav-list {
-  display: none;
-  gap: 40px;
-}
-
-
-
-
-
 .open-menu-btn{
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   line-height: 0;
   border: none;
+
 }
-@media  screen and (min-width:768px) {
- 
-  .open-menu-btn{
-    display: none;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
   }
- .logo{
-    margin-right: 120px;;
-  } 
-  
-  .nav-list{ 
-    display:flex;
-  gap: 40px;}
-  .address-list{
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list{
     display: flex;
-    flex-direction: column;
-    gap:12px;
   }
-  .address{
-    display: block;}
-  .address-link{
-    color: #434455;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .address-link:hover, 
-.address-link:focus {
-color: #404bbf
 }
-  .nav-link {
-    color: #2e2f42;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
 
 
+
+.nav-list {
+  display: none;
+}
+
+
+.nav-link {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+.link-nav:active {
+  color: #404bbf;
+}
+
+.carent {
+  position: relative;
+  color: #404bbf;
+}
+
+.carent::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
 
 .link-nav:hover::after {
   background-color: #404bbf;
 }
 
-  .nav-link:hover,
-  .nav-link:focus {
-    color: #404bbf;
-  }
-  
-  .link-nav:active {
-    color: #404bbf;
-  }
-  
-  .carent {
-    position: relative;
-    color: #404bbf;
-  }
-  
-  .carent::after {
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #404bbf;
-  }
+.address {
+  font-style: normal;
+  margin-left: auto;
+  display: none;
+}
 
-  }
-  
-  @media screen and (min-width:1158px) {
-    .logo{
-      margin-right:  76px; ;
+.address-link {
+  color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    }
-    .address-list{
-      flex-direction: row;
-      gap: 40px;
-    }
-    .address-link{
-        font-size: 16px;
-        line-height: 1.5;
-    }
-  }
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
 
-  
 .section-button {
   background-color: #2e2f42;
   padding: 188px 0;
