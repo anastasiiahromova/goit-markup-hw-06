@@ -188,7 +188,7 @@ display: block;
 
 .section-button {
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 52px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -197,20 +197,52 @@ display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 320px;
+  height: 432px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-button {
+    background-color: #2e2f42;
+    padding: 136px 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background.jpg);
+      max-width: 768px;
+      height: 436px;
+  }
 }
 
 .tittle-first {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
+  font-style: normal;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  max-width: 496px;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
+@media screen and (min-width: 768px) {
+  .tittle-first {
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+}
+
+
 
 .button {
   color: #fff;
