@@ -190,8 +190,8 @@ display: flex;
 }
 /* mobile */
 .mobile-menu {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -208,6 +208,8 @@ display: flex;
   top: 22px;
     right: 0;
     position: absolute;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     display: flex;
@@ -394,19 +396,16 @@ max-width: 1440px;}}
     padding-bottom: 112px;
   }
   .tittle-first {
-    color: #fff;
-    text-align: center;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    margin: 0 auto;
-    margin-bottom: 36px;
-    padding-bottom: 0;
+    
+      font-size: 56px;
+      width: 496px;
+      height: 120px;
+      line-height: 1.07;
+      margin-bottom: 36px;
+    }
   }
 
-}
+
 
 @media screen and (min-width: 1158px) {
   .section-button{
